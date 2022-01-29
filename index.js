@@ -18,5 +18,6 @@ const login = async (pw, hashedPw) => {
     }
 }
 
-//hashPassword('monkey');
+//hashPassword('monkey'); // first run with only this enabled and login func disabled. 
+                          //Then copy hash and pass it to login func
 login('monkey', '$2b$12$wTQaS8pXm2korcHpG9f2tOfK0200kuK1oJ47Or0EcvLCbZz97z4tm');
