@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 // generates the hash
 const hashPassword = async (pw) => {
     //const salt = await bcrypt.genSalt(12);
-    const hash = await bcrypt.hash(pw, 12);
+    const hash = await bcrypt.hash(pw, 12); // 12 is good standard for number of rounds for securing the password
     //console.log(salt);
     console.log(hash);
 }
